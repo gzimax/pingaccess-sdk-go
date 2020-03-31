@@ -873,19 +873,19 @@ type ResourceOrderView struct {
 
 //ResourceView - A resource.
 type ResourceView struct {
-	Anonymous               *bool                     `json:"anonymous,omitempty"`
-	ApplicationId           *int                      `json:"applicationId,omitempty"`
-	AuditLevel              *string                   `json:"auditLevel,omitempty"`
-	DefaultAuthTypeOverride *string                   `json:"defaultAuthTypeOverride"`
-	Enabled                 *bool                     `json:"enabled,omitempty"`
-	Id                      json.Number               `json:"id,omitempty"`
-	Methods                 *[]*string                `json:"methods"`
-	Name                    *string                   `json:"name"`
-	PathPatterns            []*PathPatternView        `json:"pathPatterns,omitempty"`
-	PathPrefixes            *[]*string                `json:"pathPrefixes,omitempty"`
-	Policy                  map[string]*[]*PolicyItem `json:"policy,omitempty"`
-	RootResource            *bool                     `json:"rootResource,omitempty"`
-	Unprotected             *bool                     `json:"unprotected,omitempty"`
+	Anonymous               *bool              `json:"anonymous,omitempty"`
+	ApplicationId           *int               `json:"applicationId,omitempty"`
+	AuditLevel              *string            `json:"auditLevel,omitempty"`
+	DefaultAuthTypeOverride *string            `json:"defaultAuthTypeOverride"`
+	Enabled                 *bool              `json:"enabled,omitempty"`
+	Id                      json.Number        `json:"id,omitempty"`
+	Methods                 *[]*string         `json:"methods"`
+	Name                    *string            `json:"name"`
+	PathPatterns            []*PathPatternView `json:"pathPatterns,omitempty"`
+	//	PathPrefixes *[]*string                `json:"pathPrefixes,omitempty"`
+	Policy       map[string]*[]*PolicyItem `json:"policy,omitempty"`
+	RootResource *bool                     `json:"rootResource,omitempty"`
+	Unprotected  *bool                     `json:"unprotected,omitempty"`
 }
 
 //ResourcesView
